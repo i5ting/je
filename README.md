@@ -22,3 +22,5 @@ or
   je -f xxx.json
   je --url http://xxxx
 ```
+
+![](ScreenShot.png)
