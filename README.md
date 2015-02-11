@@ -2,6 +2,8 @@
 
 json editor port to npm
 
+[![npm version](https://badge.fury.io/js/je.svg)](http://badge.fury.io/js/je)
+
 ## Install 
 
   [sudo] npm install -g je
