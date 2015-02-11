@@ -12,10 +12,13 @@ json editor port to npm
 
 in terminal 
 
+```
   je
+```
   
 or
  
+```
   je -f xxx.json
   je --url http://xxxx
-  
+```
