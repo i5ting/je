@@ -1,0 +1,56 @@
+# JSON Editor online - Data policy
+
+http://jsoneditoronline.org
+
+
+This file describes the data policy of JSON Editor Online. To summarize:
+
+**DO NOT LOAD OR SAVE SENSITIVE DATA USING THE EDITORS OPEN/SAVE FUNCTIONALITY.**
+
+
+## 1. Opening/saving documents online
+
+JSON Editor allows storing documents online and sharing them. Online stored
+documents are publicly available for everybody with the url, without any form of
+authentication or encryption. Online stored documents are not used by JSON
+Editor online for any purpose other than serving them to the user.
+
+Do not store documents containing sensitive data online.
+
+
+## 2. Opening documents from disk
+
+If the browser in use supports HTML5 FileReader, documents are directly loaded
+from disk into the editor. The documents are not send to the server.
+
+If HTML5 is not supported, the documents are first uploaded to the server and then
+downloaded by the editor. The documents are deleted from the server as soon as
+they are downloaded once. If a file is not downloaded for some reason, it will
+be deleted from the server after one hour. Documents retrieved via the server
+are send unencrypted.
+
+
+## 3. Saving documents to disk
+
+If the browser in use supports HTML5 a.download, documents are directly saved
+from the browser to disk. The documents are not send to the server.
+
+If HTML5 is not supported, the documents are first uploaded to the server and then
+downloaded to disk. The documents are deleted from the server as soon as they are
+downloaded once. If a file is not downloaded for some reason, it will be
+deleted from the server after one hour. documents retrieved via the server are send
+unencrypted.
+
+
+## 4. Opening urls
+
+When opening an url, the editor first tries to open the url directly. If this fails
+due to cross-domain restrictions, the url will be retrieved via the server.
+The retrieved data is sent directly to the browser and is not stored on the server.
+Documents retrieved via the server are send unencrypted.
+
+
+## 5. Cutting/pasting clipboard data
+
+When cutting and pasting text in the editor using the system clipboard, no
+data is sent via the server.

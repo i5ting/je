@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+  <title>JSON Editor Online - view, edit and format JSON online</title>
+
+  <meta name="description" content="JSON Editor Online is a web-based tool to view, edit, and format JSON. It shows your data side by side in a clear, editable treeview and in a code editor.">
+  <meta name="keywords" content="json, editor, formatter, online, format, parser, json editor, json editor online, online json editor, javascript, javascript object notation, tools, tool, json tools, treeview, open source, free, json parser, json parser online, json formatter, json formatter online, online json formatter, online json parser, format json online">
+  <meta name="author" content="Jos de Jong">
+
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- TODO: droid font
+      <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+  -->
+
+  <link rel="stylesheet" type="text/css" href="app.min.css">
+  <script type="text/javascript" src="app.min.js"></script>
+  <script type="text/javascript" src="chromeapp.js"></script>
+</head>
+
+<body>
+
+<div id="header">
+  <a href="/index.html" class="header">
+    <img alt="JSON Editor Online" title="JSON Editor Online" src="img/logo.png" id="logo">
+  </a>
+
+  <div id="name-menu">
+    <div id="name" title="Document name. Click to change"></div>
+    <div id="name-status" title="Changes are automatically saved online"></div>
+  </div>
+
+  <div id="menu">
+    <ul>
+      <li>
+        <a id="new" title="Open a new, empty document">New</a>
+      </li>
+      <li>
+        <a id="open" title="Open file">
+          Open <span class="dropDownIcon">&#x25BC;</span>
+        </a>
+        <ul id="openMenu">
+          <li>
+            <a id="openFromDisk" title="Open file from disk">Open from disk</a>
+          </li>
+          <li>
+            <a id="openUrl" title="Open file from url">Open url</a>
+          </li>
+          <li id="filesList"></li>
+        </ul>
+      </li>
+      <li>
+        <a id="save" title="Save file">
+          Save <span class="dropDownIcon">&#x25BC;</span>
+        </a>
+        <ul id="saveMenu">
+          <li>
+            <a id="saveToDisk" title="Save file to disk">Save to disk</a>
+          </li>
+          <li>
+            <a id="saveOnline" title="Save and share online">Save online</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a id="help" title="Open documentation (opens in a new window)" href="doc/index.html" target="_blank">Help</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- TODO: info, links, faq -->
+  <!--
+<div class="info" style="display:none;">
+  JSON, or JavaScript Object Notation, is a lightweight text-based open standard
+  designed for human-readable data interchange. It is derived from the JavaScript
+  scripting language for representing simple data structures and associative arrays,
+  called objects. Despite its relationship to JavaScript, it is language-independent,
+  with parsers available for most languages.
+  The JSON format was originally specified by Douglas Crockford, and is described
+  in RFC 4627. The official Internet media type for JSON is application/json.
+  The JSON filename extension is .json.
+  The JSON format is often used for serializing and transmitting structured data
+  over a network connection. It is used primarily to transmit data between a server
+  and web application, serving as an alternative to XML.
+  <br><br>
+  From <a target="_blank" href="http://en.wikipedia.org/wiki/Json">Wikipedia</a>
+</div>
+
+<div class="links" style="display:none;">
+  <a target="_blank" href="http://json.org/">http://json.org/</a><br>
+  <a target="_blank" href="http://en.wikipedia.org/wiki/Json">http://en.wikipedia.org/wiki/Json</a><br>
+</div>
+
+<div class="faq" style="display:none;"></div>
+  -->
+</div>
+
+<div id="auto">
+  <div id="contents" style="visibility: hidden;">
+    <div id="codeEditor"></div>
+
+    <div id="splitter">
+      <div id="buttons">
+        <div>
+          <button id="toTree" class="convert" title="Copy code to tree editor">
+            <div class="convert-right"></div>
+          </button>
+        </div>
+        <div>
+          <button id="toCode" class="convert" title="Copy tree to code editor">
+            <div class="convert-left"></div>
+          </button>
+        </div>
+      </div>
+      <div id="drag">
+      </div>
+    </div>
+
+    <div id="treeEditor"></div>
+  </div>
+</div>
+
+<div id="footer">
+  <div id="footer-inner">
+    <a href="http://jsoneditoronline.org" class="footer">JSON Editor Online 3.3.0</a>
+    &bull;
+    <a href="HISTORY.md" target="_blank" class="footer">History</a>
+    &bull;
+    <a href="https://github.com/josdejong/jsoneditor/" target="_blank" class="footer">Sourcecode</a>
+    &bull;
+    <a href="https://github.com/josdejong/jsoneditor/issues" target="_blank" class="footer">Report a bug</a>
+    &bull;
+    <a href="datapolicy.txt" target="_blank" class="footer">Data policy</a>
+    &bull;
+    Copyright 2011-2015 Jos de Jong
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+   "app": {
+      "launch": {
+         "local_path": "index.html"
+      }
+   },
+   "description": "JSON Editor is a tool to view, edit, and format JSON. It shows your data in an editable treeview and in a code editor.",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDC+nO58RXoyl0lHs4PfAEOoT8kCD6mRZu+Xd5ja7iwRKkfWZR3zKabYOSIGVDE60vG1HBFt+DVWesTDbVeUWRYPVpZP+T6J4Hy6dAOqWUj4Do9UFCkdyFvvXwgP5Z8OQWOm8k/yWieyiUWvpTRJbryx41Nv6ljvyRabW++xwv69QIDAQAB",
+   "manifest_version": 2,
+   "name": "JSON Editor",
+   "offline_enabled": true,
+   "optional_permissions": [ "http://api.jsoneditoronline.org/", "http://*/", "https://*/" ],
+   "permissions": [  ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.3.0"
+}
