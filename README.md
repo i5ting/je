@@ -6,7 +6,7 @@ json editor port to npm
 
 ## Install 
 
-  [sudo] npm install -g je
+    [sudo] npm install -g je
   
 ## Usage
 
